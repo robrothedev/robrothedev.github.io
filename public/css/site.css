@@ -1,5 +1,14 @@
-body {
+html, body {
+  height: 100%;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -90px;
+  padding-bottom:120px;
 }
 
 .container {
@@ -38,22 +47,29 @@ body {
   margin-right:20px;
 }
 
-.main {
-  margin-bottom:80px;
-}
-
 .post h1,
 .page h1 {
   font-size:28px;
 }
 
 footer {
-  padding:40px 0;
-  position:static;
-  bottom:0;
+  height:90px;
   width:100%;
   background:#313b47;
   color:rgba(255,255,255, 0.4);
   font-size:11px;
   text-align:center;
 }
+
+footer .container {
+  padding:20px;
+}
+
+@media (max-width: 767px) {
+    footer {
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
