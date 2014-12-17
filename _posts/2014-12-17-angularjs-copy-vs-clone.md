@@ -3,7 +3,7 @@ layout: post
 title: AngularJS Copy vs. Clone
 ---
 <p>Using angular.copy() to copy an object rather than clone it.</p>
-<p><a href="{{ site.base_url }}examples/angularjs-copy-vs-clone/">See working example</a></p>
+<p><a href="/examples/angularjs-copy-vs-clone/">See working example</a></p>
 
 {% highlight javascript %}
 var app = angular.module('app', []);
