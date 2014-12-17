@@ -4,6 +4,9 @@ title: AngularJS Copy vs. Clone
 ---
 <script src="{{ site.baseurl }}examples/js/angular-copy.js"></script>
 
+<a href="http://github.com/robrothedev/angularjs-copy-vs-clone/" class="icons-git-code pull-right">
+    <i class="fa fa-angle-left"></i>/<i class="fa fa-git"></i><i class="fa fa-angle-right"></i>
+</a>
 <h2>{{ page.title }}</h2>
 <hr>
 <div ng-app="app" ng-controller="PeopleCtrl as ctrl" class="container">
