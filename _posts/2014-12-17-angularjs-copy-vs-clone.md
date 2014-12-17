@@ -1,6 +1,7 @@
 ---
 layout: post
 title: AngularJS Copy vs. Clone
+summary: This is a summary
 ---
 <p>Using angular.copy() to copy an object rather than clone it.</p>
 <p><a href="/examples/angularjs-copy-vs-clone/">See working example</a></p>
