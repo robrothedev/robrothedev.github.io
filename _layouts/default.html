@@ -4,17 +4,13 @@
   {% include head.html %}
 
   <body>
-    {% include header.html %}
-    <div class="container main">
-        {{ content }}
-    </div>
-    <footer class="footer">
+    <div class="wrapper">
+      {% include header.html %}
       <div class="container">
-        <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
-        </small>
+          {{ content }}
       </div>
-    </footer>
+    </div>
+    {% include footer.html %}
 
   </body>
 </html>
