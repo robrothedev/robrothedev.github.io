@@ -7,16 +7,14 @@ body {
 }
 
 .masthead {
-  padding:20px 0;
+  padding:10px 0;
   background:#fcfcfc;
   border-bottom:1px solid #ddd;
 }
 
 .masthead h3 a {
-  color:#555 !important;
+  color:#555;
   margin:0;
-  padding-top:6px;
-  margin-left:60px;
 }
 
 .masthead-icons {
@@ -37,9 +35,7 @@ body {
 .rob-bw {
   border:1px solid #fff;
   width:60px;
-  position:absolute;
-  left:0;
-  top:-12px;
+  margin-right:20px;
 }
 
 .main {
