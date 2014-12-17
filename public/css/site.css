@@ -55,7 +55,8 @@ html, body {
 a.icons-git-code {
   font-size:24px;
   color:#333;
-  padding-top:10px;
+  top:20px;
+  position:relative;
 }
 
 a.icons-git-code:hover {
