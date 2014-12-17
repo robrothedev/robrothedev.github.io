@@ -52,9 +52,8 @@ html, body {
   font-size:28px;
 }
 
-.examples .fa-git {
-  position:relative;
-  top:20px;
+.examples .fa-code {
+  padding-top:20px;
   color:#333 !important;
 }
 
