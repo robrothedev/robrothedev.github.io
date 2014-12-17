@@ -7,7 +7,7 @@ title:            Test Site
 tagline:          None
 url:              http://robrothedev.github.io
 paginate:         1
-baseurl:          http://robrothedev.github.io
+baseurl:          http://robrothedev.github.io/
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
