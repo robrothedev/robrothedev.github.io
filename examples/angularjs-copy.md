@@ -3,8 +3,6 @@ layout: examples
 title: AngularJS Copy
 ---
 
-<script src="{{ site.baseurl }}examples/js/angular-copy.js"></script>
-
 <div ng-app="app" ng-controller="PeopleCtrl as ctrl" class="container">
     <table class="table">
         <tr ng-repeat="p in ctrl.people">
