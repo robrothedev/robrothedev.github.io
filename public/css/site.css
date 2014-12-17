@@ -3,10 +3,19 @@ body {
 }
 
 .masthead {
-  background:#ddd;
   padding:20px 0;
 }
 
 .masthead h3 {
   margin:0;
+}
+
+footer {
+  padding:40px 0;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:#313b47;
+  color:rgba(255,255,255, 0.4);
+  font-size:11px;
 }
