@@ -1,12 +1,15 @@
 ---
 layout: examples
-title: AngularJS Copy
+title: AngularJS Copy vs. Clone
 ---
 <script src="{{ site.baseurl }}examples/js/angular-copy.js"></script>
+
+<h2>{{ page.title }}</h2>
+<hr>
 <div ng-app="app" ng-controller="PeopleCtrl as ctrl" class="container">
     <table class="table">
         <tr ng-repeat="p in ctrl.people">
-            <td>\{{p.first}} <span ng-bind="p.last"></span></td>
+            <td><span ng-bind="p.first"> <span ng-bind="p.last"></span></td>
             <td width="10">
                 <button ng-click="ctrl.copy(p)" class="btn btn-link">Copy</button>
             </td>
