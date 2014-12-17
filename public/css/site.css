@@ -12,7 +12,8 @@ body {
   border-bottom:1px solid #ddd;
 }
 
-.masthead h3 {
+.masthead h3 a {
+  color:#555 !important;
   margin:0;
   padding-top:6px;
   margin-left:60px;
