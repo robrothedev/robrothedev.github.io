@@ -2,11 +2,11 @@
 layout: examples
 title: AngularJS Copy
 ---
-
+<script src="{{ site.baseurl }}examples/js/angular-copy.js"></script>
 <div ng-app="app" ng-controller="PeopleCtrl as ctrl" class="container">
     <table class="table">
         <tr ng-repeat="p in ctrl.people">
-            <td>{{p.first}} {{p.last}}</td>
+            <td>\{{p.first}} \{{p.last}}</td>
             <td width="10">
                 <button ng-click="ctrl.copy(p)" class="btn btn-link">Copy</button>
             </td>
