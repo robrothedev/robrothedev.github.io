@@ -4,12 +4,13 @@ body {
 
 .masthead {
   padding:20px 0;
+  background:#fcfcfc;
   border-bottom:1px solid #ddd;
 }
 
 .masthead h3 {
   margin:0;
-  margin-top:20px;
+  padding-top:20px;
 }
 
 .masthead-icons {
@@ -29,6 +30,7 @@ body {
 
 .rob-bw {
   margin-right:10px;
+  border:1px solid #fff;
   width:60px;
 }
 
