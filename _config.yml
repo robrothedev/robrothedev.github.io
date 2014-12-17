@@ -3,15 +3,15 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Test Site
+title:            Rob Rothe // PHP, AngularJS and UI Web Developer
 tagline:          None
 url:              http://robrothedev.github.io
 paginate:         1
 baseurl:          http://robrothedev.github.io/
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Rob Rothe
+  url:            https://twitter.com/robrothedev
+  email:          robrothe@gmail.com
 
 # Custom vars
 version:          1.0.0
