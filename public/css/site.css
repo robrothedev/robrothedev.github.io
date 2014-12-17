@@ -4,6 +4,7 @@ body {
 
 .masthead {
   padding:20px 0;
+  border-bottom:1px solid #ddd;
 }
 
 .masthead h3 {
@@ -25,9 +26,13 @@ body {
   color:#55acee;
 }
 
+.main {
+  margin-bottom:80px;
+}
+
 footer {
   padding:40px 0;
-  position:absolute;
+  position:static;
   bottom:0;
   width:100%;
   background:#313b47;
