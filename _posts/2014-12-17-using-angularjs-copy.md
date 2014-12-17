@@ -36,5 +36,3 @@ app.controller('PeopleCtrl', function ($scope) {
 });
 {% endhighlight %}
 
------
-
