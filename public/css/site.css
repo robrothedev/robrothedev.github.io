@@ -16,7 +16,6 @@ html, body {
 }
 
 nav {
-  background:#313b47 !important;
   padding:10px 0;
 }
 
@@ -40,7 +39,6 @@ nav {
 }
 
 .masthead-icons li a {
-  color:#fff;
 }
 
 .rob-bw {
