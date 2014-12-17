@@ -3,8 +3,8 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Rob Rothe // PHP, AngularJS and UI Web Developer
-tagline:          
+title:            RobRotheDev
+tagline:          PHP // AngularJS // UI Web Developer
 url:              http://robrothedev.github.io
 paginate:         1
 baseurl:          http://robrothedev.github.io/
