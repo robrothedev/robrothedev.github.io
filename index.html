@@ -14,12 +14,9 @@ title: Home
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
     <hr>
-    {{ post.summary }}
-    {% if post.content contains '<!--more-->' %}
-  {{ post.content | split:'<!--more-->' | first }}
-{% else %}
-  {{ post.content }}
-{% endif %}
+    <p></p>{{ post.summary }}</p>
+    <p></p><a href="{{ post.url }}" class="btn btn-link">Read more <i class="fa fa-arrow-right"></i></a></p>
+    <hr>
   </article>
   {% endfor %}
 </div>
