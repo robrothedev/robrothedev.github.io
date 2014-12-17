@@ -10,6 +10,21 @@ body {
   margin:0;
 }
 
+.masthead-icons {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.masthead-icons li {
+  display:inline-block;
+  margin-left:20px;
+}
+
+.fa-twitter {
+  color:#55acee;
+}
+
 footer {
   padding:40px 0;
   position:absolute;
