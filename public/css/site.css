@@ -52,6 +52,12 @@ html, body {
   font-size:28px;
 }
 
+.examples .fa-git {
+  position:relative;
+  top:20px;
+  color:#333 !important;
+}
+
 footer {
   height:90px;
   width:100%;
