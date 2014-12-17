@@ -42,6 +42,11 @@ body {
   margin-bottom:80px;
 }
 
+.post h1,
+.page h1 {
+  font-size:28px;
+}
+
 footer {
   padding:40px 0;
   position:static;
