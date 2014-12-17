@@ -5,9 +5,5 @@ layout: default
 <article class="page">
   <h1>{{ page.title }}//</h1>
   <hr>
-  {% if post.content contains '<!--more-->' %}
-  {{ post.content | split:'<!--more-->' | first }}
-{% else %}
-  {{ post.content }}
-{% endif %}
+  {{ content }}
 </article>
