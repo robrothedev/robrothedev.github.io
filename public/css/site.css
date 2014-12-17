@@ -16,7 +16,7 @@ html, body {
 }
 
 nav {
-  background:#313b47;
+  background:#313b47 !important;
   padding:10px 0;
 }
 
