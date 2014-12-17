@@ -4,17 +4,7 @@
   {% include head.html %}
 
   <body>
-    <header class="masthead">
-      <div class="container content">
-        <ul class="masthead-icons pull-right">
-          <li><a href="http://www.twitter.com/robrothedev"><span class="fa fa-twitter fa-2x pull-right"></span></a></li>
-          <li><a href="https://www.linkedin.com/pub/rob-rothe/64/407/b80"><span class="fa fa-linkedin-square fa-2x pull-right"></span></a></li>
-        </ul>
-        <h3>
-          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-        </h3>
-      </div>
-    </header>
+    {% include header.html %}
     <div class="container main">
         {{ content }}
     </div>
