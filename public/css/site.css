@@ -19,9 +19,10 @@ nav {
   padding:10px 0;
 }
 
-.masthead h3 a {
+.navbar-brand {
   color:#555;
-  margin:0;
+  font-size:18px;
+  padding-top:4px;
 }
 
 .masthead-icons {
