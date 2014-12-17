@@ -19,11 +19,15 @@ title: AngularJS Copy
     </table>
     <hr>
     <form ng-submit="ctrl.update()" class="form-inline">
-        <input type="text" ng-model="ctrl.edit_person.first" class="form-control">
-        <br>
-        <input type="text" ng-model="ctrl.edit_person.last" class="form-control">
-        <br>
-        <button type="submit" class="btn btn-primary">Update</button>
-        <button type="button" class="btn btn-default" ng-click="ctrl.cancel()">Cancel</button>
+    	<div class="form-group">
+        	<input type="text" ng-model="ctrl.edit_person.first" class="form-control">
+        </div>
+        <div class="form-group">
+        	<input type="text" ng-model="ctrl.edit_person.last" class="form-control">
+        </div>
+        <div class="form-group">
+        	<button type="submit" class="btn btn-primary">Update</button>
+        	<button type="button" class="btn btn-link" ng-click="ctrl.cancel()">Cancel</button>
+        </div>
     </form>
 </div>
