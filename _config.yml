@@ -3,9 +3,9 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Test Site
+tagline:          None
+url:              http://robrothedev.github.io
 paginate:         1
 baseurl:          /
 author:
