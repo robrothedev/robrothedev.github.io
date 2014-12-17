@@ -12,8 +12,3 @@ author:
   name:           Rob Rothe
   url:            https://twitter.com/robrothedev
   email:          robrothe@gmail.com
-
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/poole/poole
