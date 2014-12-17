@@ -32,6 +32,9 @@ body {
   margin-right:10px;
   border:1px solid #fff;
   width:60px;
+  position:absolute;
+  left:0;
+  top:20px;
 }
 
 .main {
