@@ -139,6 +139,10 @@ a.icons-git-code:hover {
   font-size:14px;
 }
 
+.mobile-footer p {
+  margin:0;
+}
+
 @media only screen and (max-width: 600px) {
 
   body {
