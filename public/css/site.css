@@ -69,7 +69,6 @@ hr {
   margin:0;
 }
 
-<<<<<<< HEAD
 .sidebar .bucket {
   margin:20px 0;
 }
@@ -94,21 +93,6 @@ hr {
   font-weight:normal;
   color:#777;
   margin:0 0 10px 0;
-=======
-.masthead-icons li {
-  color:#fff;
-  display:inline-block;
-  margin-left:20px;
-}
-
-.masthead-icons li a {
-}
-
-.rob-bw {
-  border:1px solid #fff;
-  width:60px;
-  margin-right:20px;
->>>>>>> FETCH_HEAD
 }
 
 .content p {

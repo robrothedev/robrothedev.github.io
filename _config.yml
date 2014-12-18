@@ -3,11 +3,7 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-<<<<<<< HEAD
 title:            Rob Rothe
-=======
-title:            RobRotheDev
->>>>>>> FETCH_HEAD
 tagline:          PHP // AngularJS // UI Web Developer
 url:              http://robrothedev.github.io
 paginate:         1
