@@ -4,13 +4,24 @@
   {% include head.html %}
 
   <body>
-    <div class="wrapper">
-      {% include header.html %}
-      <div class="container">
-          {{ content }}
-      </div>
-    </div>
-    {% include footer.html %}
-
+    <div class="sidebar">
+    <ul class="icons-list">
+      <li><a href="#"><span class="fa fa-github fa-2x"></span></a></li>
+      <li><a href="#"><span class="fa fa-twitter fa-2x"></span></a></li>
+      <li><a href="#"><span class="fa fa-linkedin fa-2x"></span></a></li>
+    </ul>
+    <img src="bucket.png" class="bucket">
+    <h3><a href="#">{{ site.title }}</a></h3>
+    <p>{{ site.tagline }}</p>
+    <footer>
+      &copy; MP
+    </footer>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+  <div class="desktop-footer">
+    &copy; MP
+  </footer>
   </body>
 </html>

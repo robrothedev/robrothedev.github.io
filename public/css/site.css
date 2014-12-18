@@ -1,51 +1,110 @@
-html, body {
-  height: 100%;
+html,
+body {
+  height:100%;
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -90px;
-  padding-bottom:120px;
-}
-
-.container {
-  position:relative;
-}
-
-nav {
-  padding:10px 0;
-}
-
-.navbar-brand {
-  color:#555;
-  font-size:18px;
-  top:6px;
-  position:relative;
-}
-
-.masthead-icons {
-  list-style:none;
-  padding:0;
+  color:#444;
+  font-size:16px;
   margin:0;
 }
 
-.masthead-icons li {
-  display:inline-block;
-  margin-left:20px;
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #ffffff;
 }
 
-.rob-bw {
-  border:1px solid #fff;
-  width:60px;
-  margin-right:20px;
+.sidebar {
+  width:320px;
+  position:fixed;
+  background:#f7f7f7;
+  height:100%;
+  text-align:center;
+  border-right:1px solid #ddd;
 }
 
-.post h1,
-.page h1 {
-  font-size:28px;
+.icons-list {
+  margin:0;
+  list-style:none;
+  text-align:center;
+  background:#e5e5e5;
+  border-bottom:1px solid #fff;
+  padding:20px 0;
+}
+
+.icons-list li {
+  display:inline;
+}
+
+.icons-list li a {
+  padding:0 20px;
+  color:#666;
+  text-shadow:#fff 0 1px 0;
+}
+
+.icons-list li a:hover {
+  color:#aaa;
+  text-decoration:none;
+}
+
+.sidebar h3 {
+  margin:0 0 10px 0;
+  font-weight:normal;
+  font-size:36px;
+  text-shadow:#fff 0 1px 0;
+}
+
+.sidebar h3 a {
+  color:#999;
+  text-decoration:none;
+}
+
+.sidebar h3 a:hover {
+  text-decoration:none;
+  color:#18638d;
+}
+
+.sidebar p {
+  color:#777;
+  margin:0;
+}
+
+.sidebar .bucket {
+  margin:20px 0;
+}
+
+.sidebar footer {
+  text-align:center;
+  padding:20px 0;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  font-size:12px;
+  color:#999;
+}
+
+.content {
+  overflow:auto;
+  padding:20px 40px;
+  margin-left:320px;
+}
+
+.content h1 {
+  font-weight:normal;
+  color:#777;
+  margin:0 0 10px 0;
+}
+
+.content p {
+  line-height:28px;
+}
+
+.desktop-footer {
+  display:none;
+  padding:40px 0;
+  color:#fff;
+  text-align:center;
+  background:#aaa;
 }
 
 a.icons-git-code {
@@ -60,16 +119,32 @@ a.icons-git-code:hover {
   text-decoration:none;
 }
 
-footer {
-  height:90px;
-  width:100%;
-  background:#313b47;
-  color:rgba(255,255,255, 0.4);
-  font-size:13px;
-  text-align:center;
-}
+@media only screen and (max-width: 600px) {
+  
+  body {
+    margin:0;
+  }
 
-footer .container {
-  padding:20px;
+  .sidebar {
+    border-right:0;
+    position:relative;
+    height:auto;
+    width:100%;
+    padding-bottom:20px;
+    border-bottom:1px solid #ccc;
+  }
+
+  .sidebar footer {
+    display:none;
+  }
+
+  .content  {
+    margin-left:0;
+  }
+
+  .desktop-footer {
+    font-size:14px;
+    display:block;
+  }
 }
 
