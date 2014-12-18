@@ -1,6 +1,7 @@
 ---
 layout: default
 title: AngularJS Copy vs. Clone
+is_example: 1
 ---
 <script src="{{ site.baseurl }}examples/js/angular-copy.js"></script>
 
