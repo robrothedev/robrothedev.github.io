@@ -13,7 +13,7 @@ title: Home
     </h1>
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-    <p>{{ post.summary }}</p>
+    <p class="summary">{{ post.summary }}</p>
   </article>
   <hr>
   {% endfor %}

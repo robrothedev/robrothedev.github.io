@@ -106,6 +106,14 @@ hr {
   line-height:28px;
 }
 
+.post .summary {
+  margin-top:20px;
+}
+
+.post time {
+  color:#999;
+}
+
 a.icons-git-code {
   font-size:24px;
   color:#333;
