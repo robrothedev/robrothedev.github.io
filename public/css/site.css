@@ -14,6 +14,14 @@ hr {
   border-bottom: 1px solid #ffffff;
 }
 
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px;
+  padding-bottom:140px;
+}
+
 .sidebar {
   width:320px;
   position:fixed;
@@ -74,13 +82,12 @@ hr {
 }
 
 .sidebar footer {
+  width:100%;
+  color:#999;
   text-align:center;
-  padding:20px 0;
   position:absolute;
   bottom:0;
-  width:100%;
-  font-size:12px;
-  color:#999;
+  padding:20px 0;
 }
 
 .content {
@@ -99,14 +106,6 @@ hr {
   line-height:28px;
 }
 
-.desktop-footer {
-  display:none;
-  padding:40px 0;
-  color:#fff;
-  text-align:center;
-  background:#aaa;
-}
-
 a.icons-git-code {
   font-size:24px;
   color:#333;
@@ -119,8 +118,22 @@ a.icons-git-code:hover {
   text-decoration:none;
 }
 
+.mobile-footer {
+  display:none;
+  padding:40px 0;
+  color:#fff;
+  text-align:center;
+  background:#aaa;
+  width:100%;
+  height:100px;
+  color:#fff;
+  text-align:center;
+  background:#555;
+  font-size:14px;
+}
+
 @media only screen and (max-width: 600px) {
-  
+
   body {
     margin:0;
   }
@@ -142,9 +155,9 @@ a.icons-git-code:hover {
     margin-left:0;
   }
 
-  .desktop-footer {
-    font-size:14px;
+  .mobile-footer {
     display:block;
   }
 }
+
 
