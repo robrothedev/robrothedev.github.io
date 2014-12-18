@@ -165,6 +165,10 @@ a.icons-git-code:hover {
   .mobile-footer {
     display:block;
   }
+
+  a.icons-git-code {
+    display:none;
+  }
 }
 
 
