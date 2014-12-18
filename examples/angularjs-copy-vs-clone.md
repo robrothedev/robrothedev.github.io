@@ -1,5 +1,5 @@
 ---
-layout: examples
+layout: default
 title: AngularJS Copy vs. Clone
 ---
 <script src="{{ site.baseurl }}examples/js/angular-copy.js"></script>
