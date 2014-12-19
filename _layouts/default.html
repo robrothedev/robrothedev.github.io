@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
-
   <body>
   <div class="wrapper">
     <div class="sidebar">
-    <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}public/images/bucket.png" class="bucket"></a>
-    <h3><a href="{{ site.baseurl }}">{{ site.title }}</a></h3>
-    <p>{{ site.tagline }}</p>
- <ul class="icons-list">
-      <li><a href="http://github.com/robrothedev"><span class="fa fa-github fa-2x"></span></a></li>
-      <li><a href="http://twitter.com/robrothedev"><span class="fa fa-twitter fa-2x"></span></a></li>
-      <li><a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80"><span class="fa fa-linkedin fa-2x"></span></a></li>
-    </ul>
-    <footer>
-    </footer>
-  </div>
-  <div class="content">
-    {{ content }}
-  </div>
+      <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}public/images/bucket.png" class="bucket"></a>
+      <h3><a href="{{ site.baseurl }}">{{ site.title }}</a></h3>
+      <p>{{ site.tagline }}</p>
+      <ul class="icons-list">
+        <li><a href="http://github.com/robrothedev"><span class="fa fa-github fa-2x"></span></a></li>
+        <li><a href="http://twitter.com/robrothedev"><span class="fa fa-twitter fa-2x"></span></a></li>
+        <li><a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80"><span class="fa fa-linkedin fa-2x"></span></a></li>
+      </ul>
+      <footer>
+      </footer>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
   </div>
   <div class="mobile-footer">
     <p>{{ site.title }}<br>{{ site.tagline}}</p>
-  </footer>
+  </div>
   </body>
 </html>
