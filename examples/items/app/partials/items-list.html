@@ -1,0 +1,7 @@
+<table class="table">
+	<tr ng-repeat="item in ctrl.items">
+		<td width="40"><input type="checkbox" ng-model="item.is_done" ng-true-value="1" ng-false-value="0" ng-click="ctrl.checkItem(item)"></td>
+		<td class="checked">{{item.name}}</td>
+		<td><button class="fa fa-times btn btn-link" ng-click="ctrl.deleteItem(item)"></button></td>
+	</tr>
+</table>

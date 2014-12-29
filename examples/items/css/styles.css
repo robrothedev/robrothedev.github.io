@@ -1,0 +1,47 @@
+body {
+	font-size:24px;
+	margin-top:20px;
+}
+
+button {
+	outline:none !important;
+}
+
+.table tr td {
+	vertical-align:middle !important;
+}
+
+input[type='text'] {
+	padding:24px !important;
+	font-size:24px;
+}
+
+input[type='checkbox'] {
+	-webkit-appearance:none;
+	padding:10px;
+	border-radius:100px;
+	border:1px solid #aaa;
+	outline:none !important;
+}
+
+input[type='checkbox']:checked {
+	background:green;
+	border:1px solid green;
+}
+
+.fa-times {
+	color:red !important;
+	text-decoration:none !important;
+	font-size:16px;
+}
+
+.checked {
+	text-decoration:line-through;
+	color:#aaa;
+}
+
+.spinner {
+	color:#aaa;
+	padding:100px;
+	text-align:center;
+}
