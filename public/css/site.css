@@ -9,7 +9,7 @@ body {
 
 .center-content {
   text-align:center;
-  margin-top:100px;
+  padding-top:100px;
 }
 
 .center-content h3 {
@@ -172,7 +172,7 @@ a.icons-git-code:hover {
   }
 
   .center-content {
-    margin-top:60px;
+    padding-top:20px;
   }
 
   .sidebar {
