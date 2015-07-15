@@ -1,5 +1,6 @@
 html,
 body {
+  /*height:100%;*/
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   color:#444;
   font-size:16px;
