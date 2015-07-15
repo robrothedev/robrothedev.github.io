@@ -7,6 +7,11 @@ body {
   margin:0;
 }
 
+.center-content {
+  text-align:center;
+  padding:200px;
+}
+
 hr {
   margin: 20px 0;
   border: 0;
