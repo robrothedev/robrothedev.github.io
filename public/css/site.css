@@ -9,7 +9,23 @@ body {
 
 .center-content {
   text-align:center;
-  padding:200px;
+  margin-top:30%;
+}
+
+.center-content h3 {
+  margin:0 0 10px 0;
+  font-weight:normal;
+  font-size:36px;
+  text-shadow:#fff 0 1px 0;
+}
+
+.center-content h3 a {
+  text-decoration:none;
+}
+
+.center-content h3 a:hover {
+  text-decoration:none;
+  color:#18638d;
 }
 
 hr {
@@ -153,6 +169,10 @@ a.icons-git-code:hover {
 
   body {
     margin:0;
+  }
+
+  .center-content {
+    margin-top:60px;
   }
 
   .sidebar {
