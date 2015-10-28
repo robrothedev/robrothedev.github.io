@@ -6,42 +6,10 @@ summary: How to encode and decode RSA tokens using PHP-JWT
 <p>Using angular.copy() to copy an object rather than clone it.</p>
 <p><a href="/examples/angularjs-copy-vs-clone/">See working example</a></p>
 
-{% highlight javascript %}
-var app = angular.module('app', []);
+{% highlight php %}
+<?php
 
-app.controller('PeopleCtrl', function () {
-    vm = this;
+$private_key = file_get_contents("/path/to/private/key/");
 
-    vm.people = [
-          {first: 'Jimmy',last: 'Page'},
-          {first: 'Ozzy',last: 'Osbourne'},
-          {first: 'Iggy',last: 'Pop'}
-    ];
-
-    vm.copy = copy;
-    vm.clone = clone;
-    vm.update = update;
-    vm.cancel = cancel;
-
-
-    function copy(person) {
-        vm.edit_person = angular.copy(person);
-        vm.edit_person_idx = vm.people.indexOf(person);
-    }
-
-    function clone(person) {
-        vm.edit_person = person;
-        vm.edit_person_idx = vm.people.indexOf(person);
-    }
-
-    function update() {
-        vm.people[vm.edit_person_idx] = vm.edit_person;
-        vm.cancel();
-    }
-
-    function cancel() {
-        vm.edit_person = {};
-    }
-});
 {% endhighlight %}
 
