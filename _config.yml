@@ -4,7 +4,7 @@ relative_permalinks: true
 
 # Setup
 title:            Rob Rothe
-tagline:          PHP // AngularJS // HTML5 Developer
+tagline:          PHP // AngularJS // UI Web Developer
 url:              http://robrothedev.github.io
 paginate:         1
 baseurl:          http://robrothedev.github.io/
