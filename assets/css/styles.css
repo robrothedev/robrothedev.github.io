@@ -128,6 +128,11 @@ h3 {
 		padding-top:0;
 	}
 
+	.about-description {
+		font-size:18px;
+		width:100%;
+	}
+
 	.navbar {
 		position:relative;
 	}
