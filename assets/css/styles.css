@@ -129,6 +129,7 @@ h3 {
 	}
 
 	.about-description {
+		line-height:24px;
 		font-size:18px;
 		width:100%;
 	}
