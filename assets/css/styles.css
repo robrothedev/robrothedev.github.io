@@ -146,17 +146,17 @@ h3 {
 		background:#EAEFF3;
 	}
 
-	.navbar .icons-list {
+	.icons-list {
 		display:flex;
 		align-items:center;
 	}
 
-	.navbar .icons-list li {
+	.icons-list li {
 		width:100%;
 		text-align:center;
 	}
 
-	.navbar .icons-list li a {
-		padding:0;
+	.icons-list li a {
+		margin:0;
 	}
 }

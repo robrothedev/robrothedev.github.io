@@ -1,0 +1,22 @@
+{
+  "name": "robrothedev.com",
+  "version": "1",
+  "authors": [
+    "Rob Rothe <robrothe@gmail.com>"
+  ],
+  "description": "Pesonal website",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "www.robrothedev.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "bootstrap": "~3.3.6"
+  }
+}
