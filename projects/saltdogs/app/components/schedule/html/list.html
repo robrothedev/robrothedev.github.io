@@ -1,0 +1,36 @@
+<ion-view title="Schedule">
+    <ion-content padding="false" class="has-header">
+        <button ng-click="list_ctrl.filter_team = ''" class="button button-standard button-block">Clear Filter</button>
+        <form class="list">
+            <label class="item item-select">
+                <span class="input-label">Filter</span>
+                <select
+                    ng-model="list_ctrl.filter_team"
+                    ng-options="value as value for (key,value) in list_ctrl.teams">
+                </select>
+            </label>
+        </form>
+        <!--
+        <div class="button-bar">
+            <button class="button button-stable button-block button-small" ng-click="filter_month = ''">All</button>
+            <button class="button button-stable button-block button-small" ng-click="filter_month = 'May'">May</button>
+            <button class="button button-stable button-block button-small" ng-click="filter_month = 'June'">Jun</button>
+            <button class="button button-stable button-block button-small" ng-click="filter_month = 'July'">Jul</button>
+            <button class="button button-stable button-block button-small" ng-click="filter_month = 'August'">Aug+</button>
+        </div>
+        -->
+        <ion-list>
+            <ion-item class="item-divider">Item</ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-item
+            	class="item-thumbnail-left"
+            	ng-repeat="game in list_ctrl.games | filter:list_ctrl.filter_team"
+            	href="#/app/game/{{$index}}">
+            		<img ng-src="images/mascots/{{game.mascot_img}}">
+            		<h2>{{game.date_string}}</h2>
+            		<p><span ng-if="!game.is_home">@&nbsp;</span>{{game.team}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,47 @@
+<ion-view title="Prices &amp; Seating Chart">
+    <ion-content padding="'true'" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Ticket Prices</div>
+            <div class="item item-body">
+                <ion-list>
+                    <ion-item menu-close="">
+                        Club Tickets
+                        <span class="item-note">$16.50</span>
+                    </ion-item>
+                    <ion-item menu-close="">
+                        Lower Reserved
+                        <span class="item-note">$12.50</span>
+                    </ion-item>
+                    <ion-item menu-close="">
+                        Upper Reserved
+                        <span class="item-note">$10.50</span>
+                    </ion-item>
+                    <ion-item menu-close="">
+                        Baseline Reserved
+                        <span class="item-note">$11.50</span>
+                    </ion-item>
+                    <ion-item menu-close="">
+                        Home Run Terrace
+                        <span class="item-note">$9.50</span>
+                    </ion-item>
+                    <ion-item menu-close="">
+                        Grass Berm/G.A.
+                        <span class="item-note">$6.50</span>
+                    </ion-item>
+                </ion-list>
+                <button class="button button-assertive button-block ">Buy Tickets</button>
+                <h3 class="text-center">Or call (402) 474-BALL</h3>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Seating Chart (Pinch to Zoom)</div>
+            <div class="item item-body">
+                <div class="container" class="scrollCanvas">
+                    <ion-scroll class="scrollCanvas" zooming="true" min-zoom="1" direction="xy" locked="false">
+                        <div class="image" style="background-image: url(images/seating-chart.jpg)"></div>  
+                    </ion-scroll>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

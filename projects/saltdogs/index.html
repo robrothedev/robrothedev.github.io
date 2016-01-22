@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="utf-8">
+<title>Saltdogs</title>
+<meta name="description" content="Mobile app for Lincoln Saltdogs Baseball Schedule">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" href="images/apple-touch-startup.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone-retina.png">
+<link rel="shortcut icon" href="#">
+
+<!-- styles to be replaced for a build -->
+<!-- build:libstyles -->
+<link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+<link href="css/ionic.css" rel="stylesheet">
+<link href="css/ionicons.min.css" rel="stylesheet">
+<!-- endbuild -->
+
+<!-- build:appstyles -->
+<link rel="stylesheet" href="css/app.css">
+<!-- endbuild -->
+
+<!-- build:momentjs -->
+<script src="bower_components/moment/moment.js"></script>
+<!-- endbuild -->
+
+<!-- scripts to be replaced for a build -->
+<!-- build:libscripts -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>
+<!-- endbuild -->
+
+<script src="app/app.js"></script>
+
+</head>
+<body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-light">
+            <ion-nav-back-button class="button-icon icon ion-ios-arrow-back"></ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </div>
+</div>
+  </body>
+</html>
