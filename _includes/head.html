@@ -1,28 +1,23 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="PHP, AngularJS and HTML5 web developer living in Lincoln, Nebraska.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="keywords" content="php, angular, css, html, web developer, lincoln, nebraska">
+<meta name="description" content="Rob Rothe // PHP, AngularJS and UI Web Developer in Lincoln, Nebraska">
+<meta name="subject" content="Web developer description and sample work">
+<meta name="robots" content="index,follow">
+<meta name="Classification" content="Web Developer">
+<meta name="author" content="Rob Rothe, robrothe@gmail.com">
+<meta name="url" content="http://www.robrothedev.com">
+<title>Rob Rothe // PHP, AngularJS and UI Web Developer // Lincoln, NE</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/site.css">
+<!-- styles -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300">
+<link rel="stylesheet" href="{{ site.baseurl }}bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ site.baseurl }}bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ site.baseurl }}css/styles.css">
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/images/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
-
-  <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml">
-
-  <!-- AngularJS -->
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+<!-- scripts -->
+<script src="{{ site.baseurl }}bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.baseurl }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}js/scripts.js"></script>
 </head>
