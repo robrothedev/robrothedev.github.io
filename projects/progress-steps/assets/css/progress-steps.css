@@ -1,0 +1,53 @@
+.progress-steps {
+	padding:10px 0;
+	width:100%;
+	position:relative;
+}
+
+.progress-steps hr {
+	margin:0;
+	padding:0;
+	line-height:0;
+	width:100%;
+	position:absolute;
+	z-index:1;
+	top:30px;
+	border-top: 2px solid #ddd;
+}
+
+.progress-steps ul {
+	list-style:none;
+	width:100%;
+	margin:0;
+	padding:0;
+	display:table;
+}
+
+.progress-steps ul li {
+	color:#bbb;
+	z-index:2;
+	position:relative;
+	display:table-cell;
+	text-align:center;
+}
+
+.progress-steps ul li.active {
+	color:#333;
+}
+
+.progress-steps ul li:before {
+	content:'';
+	border:2px solid #ddd;
+	border-radius:100px;
+	width:10px;
+	margin:4px auto 10px auto;
+	display:block;
+	height:14px;	/* if not using bootstrap, change height to align with hr (10px to start) */
+	padding:14px;	/* if not using bootstrap, change height to align with hr (10px to start)  */
+	background:#ddd;
+}
+
+.progress-steps ul li.active:before {
+	border:2px solid #fff;
+	background:#A6B5FF;	/* background color of active progress dot */
+}
