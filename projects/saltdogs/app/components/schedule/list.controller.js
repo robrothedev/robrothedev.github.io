@@ -3,13 +3,14 @@
 	'use strict';
 
 	module.exports = ListCtrl;
-	ListCtrl.$inject = ['Schedule'];
+	ListCtrl.$inject = ['Schedule','$location'];
 
-	function ListCtrl(Schedule) {
+	function ListCtrl(Schedule,$location) {
 		var vm = this;
 
 		vm.loading = true;
 		vm.checkFilter = checkFilter;
+		vm.viewGame = viewGame;
 
 		Schedule.returnData().then(function(response) {
 			vm.games = Schedule.games;
@@ -18,11 +19,15 @@
 		});
 
 		function checkFilter() {
-			alert('hi');
 			if (!vm.filter_team) {
 				vm.filter_team = false;
 				console.log('yes');
 			}
+		}
+
+		function viewGame(game) {
+			var idx = vm.games.indexOf(game);
+			$location.path('/app/game/' + idx);
 		}
 	}
 
