@@ -1,0 +1,22 @@
+{
+  "name": "angular-list-one",
+  "version": "0.0.0",
+  "homepage": "https://github.com/robrothedev/robrothedev.github.io",
+  "authors": [
+    "Rob Rothe <robrothe@gmail.com>"
+  ],
+  "description": "Simple angular list",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "bootstrap": "~3.3.6"
+  }
+}
