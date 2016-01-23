@@ -38,7 +38,14 @@ $(document).ready(function() {
 
 			});
 		}
+		else {
+			$('#navbar-sticky').hide();
+			$('#navbar').show();
+		}
 	}
+
+	// check initially
+	checkWidth();
 
 	// watch the window width on resize
 	$(window).resize(checkWidth);
