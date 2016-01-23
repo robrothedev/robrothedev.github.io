@@ -18,6 +18,7 @@ $(document).ready(function() {
 
 	// sticky navbar if not mobile
 	if ($(window).width() > 779) {
+		alert('larger');
 		$(document).scroll(function() {
 
 			if ($(document).scrollTop() > 100) {
@@ -33,6 +34,9 @@ $(document).ready(function() {
 			}
 
 		});
+	}
+	else {
+		alert('smaller');
 	}
 
 });
