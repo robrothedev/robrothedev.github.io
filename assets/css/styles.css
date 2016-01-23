@@ -94,9 +94,13 @@ body {
 	margin-left:20px;
 }
 
-.navbar-sticky .icons-list li a,
-.navbar-sticky .icons-list li a .fa-envelope {
+.navbar-sticky .icons-list li a {
 	font-size:22px;
+	margin-right:10px;
+}
+
+.navbar-sticky .icons-list li a .fa-envelope {
+	font-size:20px;
 }
 
 /* CONTENT */
