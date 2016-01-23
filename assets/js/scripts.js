@@ -23,7 +23,7 @@ $(document).ready(function() {
 		if (window_size > 779) {
 			$('#navbar-sticky').hide();
 			$('#navbar').show();
-			
+
 			$(document).scroll(function() {
 				if ($(document).scrollTop() > 100) {
 					/* show sticky navbar */
@@ -42,9 +42,10 @@ $(document).ready(function() {
 			});
 		}
 		else {
-			console.log('hiding sticky');
+			console.log('hiding stickyy');
 			$('#navbar-sticky').hide();
 			$('#navbar').show();
+			return;
 		}
 	}
 
