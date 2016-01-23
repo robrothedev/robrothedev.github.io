@@ -17,26 +17,33 @@ $(document).ready(function() {
 	$('[data-toggle=tooltip]').tooltip();
 
 	// sticky navbar if not mobile
-	if ($(window).width() > 779) {
-		alert('larger');
-		$(document).scroll(function() {
+	function checkWidth() {
+		var window_size = $(window).width();
 
-			if ($(document).scrollTop() > 100) {
-				/* show sticky navbar */
-				$('#navbar').fadeOut('fast');
-				$('#navbar-sticky').fadeIn('fast');
-			}
-	 
-			if ($(document).scrollTop() < 100) {
-				/* hide sticky navbar */
-				$('#navbar-sticky').fadeOut('fast');
-				$('#navbar').fadeIn('fast');
-			}
+		if (window_size > 779) {
+			alert('larger');
+			$(document).scroll(function() {
 
-		});
+				if ($(document).scrollTop() > 100) {
+					/* show sticky navbar */
+					$('#navbar').fadeOut('fast');
+					$('#navbar-sticky').fadeIn('fast');
+				}
+		 
+				if ($(document).scrollTop() < 100) {
+					/* hide sticky navbar */
+					$('#navbar-sticky').fadeOut('fast');
+					$('#navbar').fadeIn('fast');
+				}
+
+			});
+		}
+		else {
+			alert('smaller');
+		}
 	}
-	else {
-		alert('smaller');
-	}
+
+	// watch the window width on resize
+	$(window).resize(checkWidth);
 
 });
