@@ -21,16 +21,19 @@ $(document).ready(function() {
 		var window_size = $(window).width();
 
 		if (window_size > 779) {
-			console.log('checking: ' + window_size);
+			$('#navbar-sticky').hide();
+			$('#navbar').show();
+			
 			$(document).scroll(function() {
-
 				if ($(document).scrollTop() > 100) {
 					/* show sticky navbar */
+					console.log('greater');
 					$('#navbar').fadeOut('fast');
 					$('#navbar-sticky').fadeIn('fast');
 				}
 		 
 				if ($(document).scrollTop() < 80) {
+					console.log('less');
 					/* hide sticky navbar */
 					$('#navbar-sticky').fadeOut('fast');
 					$('#navbar').fadeIn('fast');
