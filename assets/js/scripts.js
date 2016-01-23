@@ -16,21 +16,23 @@ $(document).ready(function() {
 	// bootstrap tooltips
 	$('[data-toggle=tooltip]').tooltip();
 
-	// sticky navbar
-	$(document).scroll(function() {
+	// sticky navbar if not mobile
+	if ($(window).width() > 779) {
+		$(document).scroll(function() {
 
-		if ($(document).scrollTop() > 100) {
-			/* show sticky navbar */
-			$('#navbar').fadeOut('fast');
-			$('#navbar-sticky').fadeIn('fast');
-		}
- 
-		if ($(document).scrollTop() < 100) {
-			/* hide sticky navbar */
-			$('#navbar-sticky').fadeOut('fast');
-			$('#navbar').fadeIn('fast');
-		}
+			if ($(document).scrollTop() > 100) {
+				/* show sticky navbar */
+				$('#navbar').fadeOut('fast');
+				$('#navbar-sticky').fadeIn('fast');
+			}
+	 
+			if ($(document).scrollTop() < 100) {
+				/* hide sticky navbar */
+				$('#navbar-sticky').fadeOut('fast');
+				$('#navbar').fadeIn('fast');
+			}
 
-	});
+		});
+	}
 
 });
