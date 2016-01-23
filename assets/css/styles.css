@@ -20,6 +20,10 @@ body {
 }
 
 .navbar-sticky {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
 	z-index:99;
 	display:none;
 	background:#F76071;
