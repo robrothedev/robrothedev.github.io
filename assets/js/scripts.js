@@ -16,4 +16,29 @@ $(document).ready(function() {
 	// bootstrap tooltips
 	$('[data-toggle=tooltip]').tooltip();
 
+	// sticky top menu
+	$('.top').hide();
+
+	$(document).scroll(function() {
+
+		var sticky = false;
+
+		if ($(document).scrollTop() > 100) {
+
+			/* show sticky menu */
+			$('#navbar').hide();
+			$('#navbar-sticky').fadeIn('fast');
+		}
+
+
+		if ($(document).scrollTop() < 20) {
+			$('.top').fadeOut();
+
+			/* sticky menu */
+			$('#navbar-sticky').fadeOut('fast');
+			$('#navbar').fadeIn('fast');
+		}
+
+	});
+
 });

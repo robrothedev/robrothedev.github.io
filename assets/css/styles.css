@@ -1,20 +1,34 @@
 body {
 	font-family: 'Raleway', sans-serif !important;
 	color:#444;
-	padding-top:196px;
 	font-size:16px;
 }
 
 .navbar {
-	z-index:99;
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
 	padding:20px 0;
 	background:#F76071;
 	margin-bottom:0;
 	border-bottom:1px solid #fff;
+}
+
+
+.img-rob {
+	width:132px;
+	height:132px;
+	float:right;
+	border:4px solid #fff;
+}
+
+.navbar-sticky {
+	z-index:99;
+	display:none;
+	background:#F76071;
+	padding:10px;
+}
+
+.navbar-sticky .img-rob {
+	width:64px;
+	height:64px;
 }
 
 .navbar h1,
@@ -37,13 +51,6 @@ body {
 .navbar h3 {
 	font-size:18px;
 	margin:8px 0;
-}
-
-.img-rob {
-	width:132px;
-	height:132px;
-	float:right;
-	border:4px solid #fff;
 }
 
 .icons-list {
