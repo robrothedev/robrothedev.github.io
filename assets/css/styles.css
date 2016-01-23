@@ -12,40 +12,6 @@ body {
 	border-bottom:1px solid #fff;
 }
 
-
-.img-rob {
-	width:132px;
-	height:132px;
-	float:right;
-	border:4px solid #fff;
-}
-
-.navbar-sticky {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	z-index:99;
-	/*display:none;*/
-	background:#F76071;
-	padding:10px;
-	color:#fff;
-}
-
-.navbar-sticky .img-rob {
-	width:64px;
-	height:64px;
-}
-
-.navbar-sticky .media-heading {
-	color:#fff;
-	margin-left:20px;
-	margin-top:20px;
-}
-
-.navbar-sticky .media-heading .icons-list {
-	float:right;
-}
 .navbar h1,
 .navbar h2,
 .navbar h3 {
@@ -92,6 +58,43 @@ body {
 
 .icons-list li a .fa-envelope {
 	font-size:24px;
+}
+
+.img-rob {
+	width:132px;
+	height:132px;
+	float:right;
+	border:4px solid #fff;
+}
+
+.navbar-sticky {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:99;
+	/*display:none;*/
+	background:#F76071;
+	padding:10px;
+	color:#fff;
+}
+
+.navbar-sticky .img-rob {
+	width:64px;
+	height:64px;
+}
+
+.navbar-sticky .media-heading {
+	color:#fff;
+	margin-left:20px;
+}
+
+.navbar-sticky .icons-list {
+	margin-left:20px;
+}
+
+.navbar-sticky .icons-list li a {
+	font-size:18px;
 }
 
 /* CONTENT */
@@ -152,6 +155,10 @@ h3 {
 		padding-top:0;
 	}
 
+	.navbar-sticky {
+		display:none;
+	}
+
 	.img-rob {
 		float:none;
 		display:block;
@@ -166,6 +173,7 @@ h3 {
 	}
 
 	.navbar {
+		display:block;
 		text-align:center;
 		position:relative;
 	}
