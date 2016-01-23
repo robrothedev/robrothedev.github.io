@@ -17,6 +17,7 @@ $(document).ready(function() {
 	$('[data-toggle=tooltip]').tooltip();
 
 	// sticky navbar if not mobile
+	// FIXME
 	function checkWidth() {
 		var window_size = $(window).width();
 
@@ -25,16 +26,13 @@ $(document).ready(function() {
 			$('#navbar').show();
 
 			$(document).scroll(function() {
-				console.log('Top: ' + $(document).scrollTop());
 				if ($(document).scrollTop() > 100) {
 					/* show sticky navbar */
-					console.log('greater');
 					$('#navbar').fadeOut('fast');
 					$('#navbar-sticky').fadeIn('fast');
 				}
 		 
 				if ($(document).scrollTop() < 80) {
-					console.log('lesser');
 					/* hide sticky navbar */
 					$('#navbar-sticky').fadeOut('fast');
 					$('#navbar').fadeIn('fast');
@@ -42,10 +40,8 @@ $(document).ready(function() {
 			});
 		}
 		else {
-			console.log('hiding stickyy');
 			$('#navbar-sticky').hide();
 			$('#navbar').show();
-			return;
 		}
 	}
 
