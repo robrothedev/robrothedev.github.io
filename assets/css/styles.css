@@ -5,6 +5,7 @@ body {
 }
 
 .navbar {
+	display:none;
 	padding:20px 0;
 	background:#F76071;
 	margin-bottom:0;
@@ -25,9 +26,10 @@ body {
 	left:0;
 	width:100%;
 	z-index:99;
-	display:none;
+	/*display:none;*/
 	background:#F76071;
 	padding:10px;
+	color:#fff;
 }
 
 .navbar-sticky .img-rob {
@@ -35,6 +37,15 @@ body {
 	height:64px;
 }
 
+.navbar-sticky .media-heading {
+	color:#fff;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.navbar-sticky .media-heading .icons-list {
+	float:right;
+}
 .navbar h1,
 .navbar h2,
 .navbar h3 {
