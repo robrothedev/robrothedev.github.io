@@ -20,9 +20,8 @@ $(document).ready(function() {
 	function checkWidth() {
 		var window_size = $(window).width();
 
-		console.log('checking width: ' + window_size);
-
 		if (window_size > 779) {
+			console.log('checking width: ' + window_size);
 			$(document).scroll(function() {
 
 				if ($(document).scrollTop() > 100) {
