@@ -87,8 +87,8 @@ body {
 .navbar-sticky h1 {
 	font-size:24px;
 	color:#fff;
-	margin-left:20px;
 	margin-top:10px;
+	margin-bottom:0px;
 }
 
 .navbar-sticky .icons-list {
@@ -97,7 +97,7 @@ body {
 
 .navbar-sticky .icons-list li a {
 	font-size:22px;
-	margin-right:10px;
+	margin-right:20px;
 }
 
 .navbar-sticky .icons-list li a .fa-envelope {
