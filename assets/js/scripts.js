@@ -20,8 +20,9 @@ $(document).ready(function() {
 	function checkWidth() {
 		var window_size = $(window).width();
 
+		console.log('checking width: ' + window_size);
+
 		if (window_size > 779) {
-			alert('larger');
 			$(document).scroll(function() {
 
 				if ($(document).scrollTop() > 100) {
@@ -30,16 +31,13 @@ $(document).ready(function() {
 					$('#navbar-sticky').fadeIn('fast');
 				}
 		 
-				if ($(document).scrollTop() < 100) {
+				if ($(document).scrollTop() < 80) {
 					/* hide sticky navbar */
 					$('#navbar-sticky').fadeOut('fast');
 					$('#navbar').fadeIn('fast');
 				}
 
 			});
-		}
-		else {
-			alert('smaller');
 		}
 	}
 
