@@ -19,10 +19,11 @@ $(document).ready(function() {
 	// sticky navbar if not mobile
 	function checkWidth() {
 		var window_size = $(window).width();
-		
-		$(document).scroll(function() {
-			if (window_size > 779) {
-				console.log('checking width: ' + window_size);
+
+		if (window_size > 779) {
+			console.log('checking: ' + window_size);
+			$(document).scroll(function() {
+
 				if ($(document).scrollTop() > 100) {
 					/* show sticky navbar */
 					$('#navbar').fadeOut('fast');
@@ -34,14 +35,14 @@ $(document).ready(function() {
 					$('#navbar-sticky').fadeOut('fast');
 					$('#navbar').fadeIn('fast');
 				}
-			}
-			else {
-				console.log('hiding sticky');
-				$('#navbar-sticky').hide();
-				$('#navbar').show();
-			}
 
-		});
+			});
+		}
+		else {
+			console.log('hiding sticky');
+			$('#navbar-sticky').hide();
+			$('#navbar').show();
+		}
 	}
 
 	// check initially
