@@ -5,6 +5,7 @@ body {
 }
 
 .navbar {
+	border-radius:0;
 	display:none;
 	padding:20px 0;
 	background:#F76071;
