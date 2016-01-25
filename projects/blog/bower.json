@@ -18,9 +18,9 @@
     "jquery": "~2.1.4",
     "angular": "~1.4.0",
     "angular-ui-router": "~0.2.15",
-    "angular-bootstrap": "~0.13.4",
-    "froala-wysiwyg-editor": "~2.0.5",
     "angular-sanitize": "~1.4.9",
-    "moment": "~2.11.1"
+    "moment": "~2.11.1",
+    "froala-wysiwyg-editor": "~2.0.5",
+    "angular-bootstrap": "~1.1.1"
   }
 }
