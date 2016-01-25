@@ -1,0 +1,22 @@
+<a href="#/new" class="btn btn-success pull-right"><span class="fa fa-plus"></span> Create Post</a>
+<h1>Blog List</h1>
+<hr>
+<table class="table table-striped blog-list">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th class="text-right">Published Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr
+			ng-repeat="post in blog_ctrl.blog_posts"
+			ng-class="{'danger':!post.is_published}">
+			<td><button class="btn btn-link btn-lg" ng-click="blog_ctrl.editPost(post)">{{post.title}}</button></td>
+			<td class="blog-list-controls">
+				<div class="pull-right" ng-if="post.is_published">{{post.published_date}}</div>
+				<div class="pull-right" ng-if="!post.is_published"><strong>NOT PUBLISHED</strong></div>
+			</td>
+		</tr>
+	</tbody>
+</table>

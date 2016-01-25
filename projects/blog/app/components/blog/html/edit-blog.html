@@ -1,0 +1,57 @@
+<div ng-if="edit_blog_ctrl.invalid_post" class="alert alert-danger">
+	<a href="#/" class="alert-link pull-right">Back to the list</a>
+	<strong><span class="fa fa-frown-o"></span> Sorry, no blog post was found.</strong>
+</div>
+
+<div ng-if="edit_blog_ctrl.blog_post">
+
+	<div class="well well-sm">
+		<!-- editor buttons -->
+		<button class="btn btn-default" ng-click="edit_blog_ctrl.done()" ng-disabled="edit_blog_ctrl.disabled_btns">Done</button>
+		<button class="btn btn-default" ng-click="edit_blog_ctrl.preview()" ng-disabled="edit_blog_ctrl.disabled_btns">Preview</button>
+		<button class="btn btn-success" ng-click="edit_blog_ctrl.publish()" ng-disabled="edit_blog_ctrl.disabled_btns" ng-if="!edit_blog_ctrl.blog_post.is_published">Publish</button>
+
+		<!-- last saved notice -->
+		<div class="pull-right last-saved" ng-if="edit_blog_ctrl.blog_post.idx">
+			<strong>Last saved:
+				<span ng-if="!edit_blog_ctrl.saving">{{edit_blog_ctrl.last_saved}}</span>
+				<span ng-if="edit_blog_ctrl.saving">Saving...</span>
+			</strong>
+		</div>
+
+		<a href="#/" class="btn btn-link pull-right" ng-if="!edit_blog_ctrl.blog_post.idx">Cancel</a>
+
+	</div>
+
+	<!-- alert error -->
+	<div class="alert alert-danger" ng-if="edit_blog_ctrl.errors">
+		<button class="btn btn-link alert alert-link pull-right" ng-click="edit_blog_ctrl.errors = false;">&times;</button>
+		<strong>Error:</strong>
+		<ul>
+			<li ng-repeat="error in edit_blog_ctrl.errors">{{error.msg}}</li>
+		</ul>
+	</div>
+
+	<!-- blog title -->
+	<label>Blog Title</label>
+	<input
+		type="text"
+		class="form-control edit-blog-title"
+		ng-model="edit_blog_ctrl.blog_post.title"
+		ng-blur="edit_blog_ctrl.save()"
+		blur-on-enter
+		placeholder="Add title and hit enter">
+
+	<!-- only show editor if there is a blog_id -->
+	<div ng-if="edit_blog_ctrl.blog_post.idx">
+
+		<!-- content editor -->
+		<editor
+			on-save="edit_blog_ctrl.save()"
+			img-upload-url="edit_blog_ctrl.img_upload_url"
+			ng-model="edit_blog_ctrl.blog_post.content">
+		</editor>
+
+	</div>
+
+</div>
