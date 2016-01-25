@@ -17,25 +17,26 @@ $(document).ready(function() {
 	$('[data-toggle=tooltip]').tooltip();
 
 	// sticky navbar if not mobile
-	// FIXME
+	
+
 	function checkWidth() {
 		var window_size = $(window).width();
-
+		
 		if (window_size > 779) {
 			$('#navbar-sticky').hide();
 			$('#navbar').show();
 
-			$(document).scroll(function() {
+			$(window).scroll(function() {
 				if ($(document).scrollTop() > 100) {
 					/* show sticky navbar */
-					$('#navbar').fadeOut('fast');
-					$('#navbar-sticky').fadeIn('fast');
+					$('#navbar').hide();
+					$('#navbar-sticky').show();
 				}
 		 
 				if ($(document).scrollTop() < 80) {
 					/* hide sticky navbar */
-					$('#navbar-sticky').fadeOut('fast');
-					$('#navbar').fadeIn('fast');
+					$('#navbar-sticky').hide();
+					$('#navbar').show();
 				}
 			});
 		}
