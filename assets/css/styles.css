@@ -140,7 +140,9 @@ h3 {
 }
 
 .work-links .row {
-	margin-bottom:40px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:4px solid #999;
 }
 
 /* FOOTER */
