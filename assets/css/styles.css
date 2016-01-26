@@ -145,6 +145,11 @@ h3 {
 	border-bottom:4px solid #999;
 }
 
+.screen-thumb {
+	margin:20px 0;
+	display:block;
+}
+
 /* FOOTER */
 
 .footer {
