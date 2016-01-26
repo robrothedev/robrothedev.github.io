@@ -139,9 +139,9 @@ h3 {
 	margin-top:40px;
 }
 
-.work-links .row {
-	padding-bottom:20px;
-	margin-bottom:20px;
+.work-links .row > div {
+	padding-bottom:40px;
+	margin-bottom:40px;
 	border-bottom:4px solid #999;
 }
 
