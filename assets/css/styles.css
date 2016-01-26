@@ -140,7 +140,7 @@ h3 {
 }
 
 .work-links .row {
-	margin-bottom:20px;
+	margin-bottom:40px;
 }
 
 /* FOOTER */
@@ -206,5 +206,9 @@ h3 {
 
 	.icons-list li a {
 		margin:0;
+	}
+
+	.work-links .row {
+		margin-bottom:20px;
 	}
 }
