@@ -140,6 +140,7 @@ h3 {
 }
 
 .work-links .row > div {
+	padding:20px;
 	padding-bottom:40px;
 	margin-bottom:40px;
 	border-bottom:4px solid #ddd;
