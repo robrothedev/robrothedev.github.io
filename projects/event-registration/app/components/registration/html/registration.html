@@ -1,0 +1,37 @@
+<h2 class="page-title">Registration Information</h2>
+<hr>
+
+<!-- error alerts -->
+<submit-errors ng-if="ctrl.errors" errors="ctrl.errors"></submit-errors>
+
+<!-- registration form -->
+<form method="post" ng-submit="ctrl.submit()" class="form-horizontal">
+	<div class="form-group" ng-class="{'has-error':ctrl.errors.name}">
+		<label class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" ng-model="ctrl.registration.name">
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':ctrl.errors.email}">
+		<label class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" ng-model="ctrl.registration.email">
+		</div>
+	</div>
+	<div class="form-group" ng-class="{'has-error':ctrl.errors.phone}">
+		<label class="col-sm-2 control-label">Phone</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" ng-model="ctrl.registration.phone" input-mask="999-999-9999">
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<button type="submit" class="btn btn-primary">
+				Next
+				<span class="fa fa-arrow-right" ng-if="!ctrl.submitting"></span>
+				<span class="fa fa-spinner fa-spin" ng-if="ctrl.submitting"></span>
+			</button>
+		</div>
+	</div>
+</form>

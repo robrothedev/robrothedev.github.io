@@ -1,0 +1,56 @@
+<button class="btn btn-success pull-right" ng-if="ctrl.allow_confirm" ng-click="ctrl.submit()"><span class="fa fa-check"></span> Confirm your registration</button>
+<h2 class="page-title">Confirmation Information</h2>
+
+<submit-errors ng-if="ctrl.errors" errors="ctrl.errors"></submit-errors>
+
+<hr>
+
+<!-- conference info -->
+<h3>{{ctrl.event_info.title}}</h23>
+<h4>{{ctrl.event_info.date_string}}</h4>
+<hr>
+
+<!-- registration info -->
+<a href="#/register" class="pull-right">Edit</a>
+<h4>Registration</h4>
+<dl class="dl-horizontal">
+	<dt>Name:</dt>
+	<dd>{{ctrl.registration.name}}</dd>
+	<dt>Phone:</dt>
+	<dd>{{ctrl.registration.phone}}</dd>
+	<dt>Email:</dt>
+	<dd>{{ctrl.registration.email}}</dd>
+	<dt ng-if="ctrl.registration.promo_code">Promo Code:</dt>
+	<dd>{{ctrl.registration.promo_code}}</dd>
+</dl>
+<hr>
+
+<!-- attendee info -->
+<a href="#/attendees" class="pull-right">Edit</a>
+<h4>Attendees</h4>
+<ul>
+	<li ng-repeat="attendee in ctrl.attendees">{{attendee.first_name}} {{attendee.last_name}} <span ng-if="attendee.email"> - {{attendee.email}}</span></li>
+</ul>
+
+<hr>
+<a href="#/payment" class="pull-right">Edit</a>
+
+<h4>Payment Information</h4>
+<dl class="dl-horizontal">
+    <dt>Card Name:</dt>
+    <dd>{{ctrl.payment.card_name}}</dd>
+    <dt>Card Number:</dt>
+    <dd>{{ctrl.payment.last_four_digits}}</dd>
+</dl>
+
+<hr>
+<h4>Cost</h4>
+<dl class="dl-horizontal">
+	<dt>Conference Cost </dt>
+	<dd>${{ctrl.registration.without_tax}}</dd>
+	<dt>NE. Sales Tax (7.25%): </dt>
+	<dd>${{ctrl.registration.sales_tax}}</dd>
+	<dd>___________________</dd>
+	<dt>Total:</dt>
+	<dd>${{ctrl.registration.total_payment}}</dd>
+</dl>

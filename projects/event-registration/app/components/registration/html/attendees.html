@@ -1,0 +1,41 @@
+<h2 class="page-title">Attendees</h2>
+<hr>
+<p>Please add the names of who will be attending the conference, <strong>including yourself if you are attending.</strong></p>
+<hr>
+<button type="button" class="btn btn-default" ng-click="ctrl.add()"><span class="fa fa-plus"></span> Add Additional Attendee</button>
+<hr>
+
+<!-- error alert -->
+<submit-errors ng-if="ctrl.errors" errors="ctrl.errors"></submit-errors>
+
+<!-- attendee form -->
+<form class="form-inline" method="post">
+
+	<div ng-repeat="person in ctrl.attendees">
+		<h4>Attendee {{$index + 1}}</h4>
+		<div class="form-group" style="margin-right:10px;">
+			<label>First Name</label>
+			<input type="text" ng-model="person.first_name" class="form-control">
+		</div>
+		<div class="form-group" style="margin-right:10px;">
+			<label>Last Name</label>
+			<input type="text" ng-model="person.last_name" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Email</label>
+			<input type="text" ng-model="person.email" class="form-control">
+		</div>
+		<div class="form-group" ng-if="$index > 0">
+			<button type="button" class="btn btn-danger" ng-click="ctrl.remove(person)"><span class="fa fa-times"></span></button>
+		</div>
+		<hr>
+	</div>
+
+</form>
+
+<!-- submit attendees button -->
+<button type="button" ng-click="ctrl.submit()" class="btn btn-primary">
+	Next
+	<span class="fa fa-arrow-right" ng-if="!ctrl.submitting"></span>
+	<span class="fa fa-spinner fa-spin" ng-if="ctrl.submitting"></span>
+</button>

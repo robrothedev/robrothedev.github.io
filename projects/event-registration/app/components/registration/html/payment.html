@@ -1,0 +1,112 @@
+<h2 class="page-title">Payment</h2>
+<hr>
+<h3>Total: ${{ctrl.registration.total_payment}}</h3>
+<hr>
+<alert-error message="Invalid code" ng-if="ctrl.invalid_code"></alert-error>
+<form method="post" class="form-inline">
+    <div class="row">
+        <div class="col-sm-3 text-right">
+            <label class="control-label">Promo Code</label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" ng-model="ctrl.promo_code" class="form-control">
+            <button type="button" ng-click="ctrl.submitPromoCode()" class="btn btn-primary">
+                Apply
+                <span class="fa fa-spinner fa-spin" ng-if="ctrl.submitting"></span>
+            </button>
+        </div>
+    </div>
+</form>
+<hr>
+
+<h3>Credit Card Information</h3>
+
+<!-- current info so show it and add option to edit -->
+<div ng-if="ctrl.payment_info" class="payment-info">
+    <dl class="dl-horizontal">
+        <dt>Card Name</dt>
+        <dd>{{ctrl.payment_info.card_name}}</dd>
+        <dt>Card Number</dt>
+        <dd>{{ctrl.payment_info.last_four_digits}}</dd>
+    </dl>
+    <button class="btn btn-default" ng-click="ctrl.removePaymentInfo()">Change</button>
+    <a href="#/confirmation" class="btn btn-primary">Next <span class="fa fa-arrow-right"></span></a>
+</div>
+
+
+<div ng-if="!ctrl.payment_info">
+    <p>Please provide the following payment information.</p>
+
+    <!-- errors alert -->
+    <submit-errors ng-if="ctrl.errors" errors="ctrl.errors"></submit-errors>
+
+    <form method="post" class="form-horizontal">
+        <div class="form-group" ng-class="{'has-error':errors.card_name}">
+            <label class="control-label col-sm-3">Credit Card</label>
+            <div class="col-sm-9">
+                <select ng-model="ctrl.payment.card_name" class="form-control">
+                    <option value="">Select One</option>
+                    <option value="American Express">American Express</option>
+                    <option value="Discover">Discover</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':errors.name_on_card}">
+            <label class="control-label col-sm-3">Name on Card</label>
+            <div class="col-sm-9">
+                <input type="text" ng-model="ctrl.payment.name_on_card" value="<?= @$name_on_card; ?>" class="form-control">
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':errors.card_number}">
+            <label class="control-label col-sm-3">Card Number</label>
+            <div class="col-sm-9">
+                <input type="text" ng-model="ctrl.payment.card_number" value="<?= @$card_number; ?>" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3">Security Code</label>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <input type="text" ng-model="ctrl.payment.csc" maxlength="4" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{'has-error':errors.card_number}">
+            <label class="control-label col-sm-3">Expiration Date</label>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <select ng-model="ctrl.payment.exp_month" ng-options="m.month as m.month for m in ctrl.months" class="form-control">
+                            <option value="">Month</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <select ng-model="ctrl.payment.exp_year" ng-options="y.year as y.year for y in ctrl.years" class="form-control">
+                            <option value="">Year</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- submit payment button -->
+        <div class="form-group">
+            <div class="col-sm-3 col-sm-offset-3">
+                <button type="button" ng-click="ctrl.submit()" class="btn btn-primary">
+                    Next
+                    <span class="fa fa-arrow-right" ng-if="!ctrl.submitting"></span>
+                    <span class="fa fa-spinner fa-spin" ng-if="ctrl.submitting"></span>
+                </button>
+            </div>
+            <div ng-if="ctrl.existing_payment_info">
+                <div class="col-sm-6 text-right">
+                    <button class="btn btn-default" ng-click="ctrl.cancelNewPayment()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
