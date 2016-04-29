@@ -26,7 +26,6 @@
 		}
 
 		function viewGame(game) {
-			alert(game);
 			var idx = vm.games.indexOf(game);
 			$location.path('/app/game/' + idx);
 		}
