@@ -42,11 +42,11 @@ ion-nav-back-button {
   	background-position: center, center;
 }
 
-[ion-item] {
+ion-item {
 	position:relative;
 }
 
-[ion-item] .fa-angle-right {
+ion-item .fa-angle-right {
 	position:absolute;
 	top:24%;
 	color:#ccc;
