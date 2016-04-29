@@ -48,6 +48,7 @@ ion-item {
 
 ion-item .fa-angle-right {
 	position:absolute;
-	top:24%;
-	color:#ccc;
+	top:34%;
+	right:20px;
+	color:#999;
 }
