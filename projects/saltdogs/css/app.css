@@ -48,5 +48,6 @@ ion-nav-back-button {
 
 [ionic-item] .fa-angle-right {
 	position:absolute;
-	top:34%;
+	top:24%;
+	color:#999;
 }
