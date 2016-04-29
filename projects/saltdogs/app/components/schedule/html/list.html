@@ -26,7 +26,8 @@
             <ion-item
             	class="item-thumbnail-left"
             	ng-repeat="game in list_ctrl.games | filter:list_ctrl.filter_team"
-            	ng-click="list_ctrl.viewGame(game)">
+            	ng-click="list_ctrl.viewGame(game)"
+                href="#">
             		<img ng-src="images/mascots/{{game.mascot_img}}">
             		<h2>{{game.date_string}}</h2>
             		<p><span ng-if="!game.is_home">@&nbsp;</span>{{game.team}}</p>
