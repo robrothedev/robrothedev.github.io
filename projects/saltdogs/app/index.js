@@ -3,11 +3,11 @@
 	'use strict';
 
 	// dependencies
-	require('angular');
-	require('angular-animate');
-	require('angular-sanitize');
-	require('angular-ui-router');
-	require('ionic');
+	require('../bower_components/angular/angular.js');
+	require('../bower_components/angular-animate/angular-animate.js');
+	require('../bower_components/angular-sanitize');
+	require('../bower_components/angular-ui-router/release/angular-ui-router.js');
+	require('../bower_components/ionic/release/js/ionic-angular.js');
 
 	// app module
 	require('./components/app/app.module.js');
