@@ -7,7 +7,7 @@
 
 	function Schedule($http,$q) {
 		var data_q = $q.defer();
-		var json_file = 'app/components/schedule/json/schedule_2016.json';
+		var json_file = 'app/components/schedule/json/schedule_2017.json';
 		var service = {
 			games: [],
 			teams: [],
