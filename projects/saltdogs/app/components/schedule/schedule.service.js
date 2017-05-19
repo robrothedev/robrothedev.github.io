@@ -26,17 +26,17 @@
 
 				angular.forEach(games,function(game) {
 					// format the date
-					game.date_string = moment(game.date_time).format('MMMM Do YYYY h:mm a');
+					game.date_string = moment(game.start).format('MMMM Do YYYY h:mm a');
 
 					// apply the image file extension for the mascot image
-					game.mascot_img = game.mascot + '.png';
+					game.mascot_img = game.mascot_img + '.png';
 
 					// get the next game date
 					if (!service.next_game) {
-						var game_day = moment(game.date_time).format('YYYYMM');
+						var game_day = moment(game.start).format('YYYYMM');
 
 						if (game_day == today) {
-							game.date_string = 'Today at ' + moment(game.date_time).format('h:mm a')
+							game.date_string = 'Today at ' + moment(game.start).format('h:mm a')
 							service.next_game = game;
 						}
 						else {
@@ -47,7 +47,7 @@
 					}
 
 					// create a unique array of teams for a filter
-					var team = game['team'];
+					var team = game['city'];
 					if (service.teams.indexOf(team) === -1) {
 						var team_object = team;
 						service.teams.push(team);

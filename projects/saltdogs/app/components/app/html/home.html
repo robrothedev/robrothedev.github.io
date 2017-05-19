@@ -5,7 +5,7 @@
             <div class="item item-divider">Next Game</div>
             <div class="item item-body">
             	<h2>{{app_ctrl.next_game.date_string}}</h2>
-            	<h2><span ng-if="!app_ctrl.next_game.is_home">@&nbsp;</span>{{app_ctrl.next_game.team}}</h2>
+            	<h2><span ng-if="!app_ctrl.next_game.is_home">@&nbsp;</span>{{app_ctrl.next_game.city}} {{app_ctrl.next_game.mascot}}</h2>
                 <a menu-close="" href="#/app/schedule" class="button button-positive button-block icon ion-android-calendar">&nbsp;Schedule</a>
                 <a menu-close="" href="#/app/tickets" class="button button-assertive button-block">Get Tickets</a>
             </div>

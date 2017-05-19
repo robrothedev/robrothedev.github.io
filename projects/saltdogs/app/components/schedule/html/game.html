@@ -2,7 +2,7 @@
 <ion-view title="Game">
     <ion-content padding="'true'">
         <h3 class="text-center">{{game_ctrl.game.date_string}}</h3>
-        <h4 class="text-center"><span ng-if="!game_ctrl.game.is_home">@&nbsp;{{game_ctrl.game.team}}</h4>
+        <h4 class="text-center"><span ng-if="!game_ctrl.game.is_home">@&nbsp;{{game_ctrl.game.city }}</h4>
         <img src="images/mascots/{{game_ctrl.game.mascot_img}}" class="center-img">
         <a menu-close="" href="#/app/tickets" class="button button-assertive button-block">Get Tickets</a>
     </ion-content>

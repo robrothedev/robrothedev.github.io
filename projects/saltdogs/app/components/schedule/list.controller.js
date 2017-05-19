@@ -21,7 +21,6 @@
 		function checkFilter() {
 			if (!vm.filter_team) {
 				vm.filter_team = false;
-				console.log('yes');
 			}
 		}
 
