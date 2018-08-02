@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+
 <body>
 
   <!-- sticky navbar -->
@@ -11,12 +12,28 @@
           <img src="{{ site.baseurl }}assets/images/rob.jpg" itemprop="image" alt="Rob Rothe" class="img img-circle img-rob">
         </div>
         <div class="col-sm-9">
-          <h1>Rob Rothe // PHP, AngularJS and UI Web Developer</h1>
+          <h1>Rob Rothe // PHP, ReactJS and UI Web Developer</h1>
           <ul class="icons-list">
-            <li><a href="http://github.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Github"><span class="fa fa-github"></span></a></li>
-            <li><a href="https://www.twitter.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80" data-toggle="tooltip" data-placement="bottom" title="Linked In"><span class="fa fa-linkedin"></span></a></li>
-            <li><a href="mailto:robrothe@gmail.com" itemprop="email" data-toggle="tooltip" data-placement="bottom" title="robrothe@gmail.com"><span class="fa fa-envelope"></span></a></li>
+            <li>
+              <a href="http://github.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Github">
+                <span class="fa fa-github"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80" data-toggle="tooltip" data-placement="bottom" title="Linked In">
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:robrothe@gmail.com" itemprop="email" data-toggle="tooltip" data-placement="bottom" title="robrothe@gmail.com">
+                <span class="fa fa-envelope"></span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -26,26 +43,49 @@
   <!-- default navbar -->
   <div class="navbar navbar-unsticky" id="navbar">
     <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="{{ site.baseurl }}assets/images/rob.jpg" itemprop="image" alt="Rob Rothe" class="img img-circle img-rob">
-          </div>
-          <div class="col-sm-8">
-            <div itemscope itemtype="http://schema.org/Person">
-              <h1 itemprop="name">Rob Rothe</h1>
-              <h2><span itemprop="jobTitle">PHP, AngularJS and UI Web Developer</span></h2>
-              <h3><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Lincoln</span>, <span itemprop="addressRegion">NE</span></span></h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="{{ site.baseurl }}assets/images/rob.jpg" itemprop="image" alt="Rob Rothe" class="img img-circle img-rob">
+        </div>
+        <div class="col-sm-8">
+          <div itemscope itemtype="http://schema.org/Person">
+            <h1 itemprop="name">Rob Rothe</h1>
+            <h2>
+              <span itemprop="jobTitle">PHP, AngularJS and UI Web Developer</span>
+            </h2>
+            <h3>
+              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Lincoln</span>,
+                <span itemprop="addressRegion">NE</span>
+              </span>
+            </h3>
 
-              <!-- icons -->
-              <ul class="icons-list">
-                <li><a href="http://github.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Github"><span class="fa fa-github"></span></a></li>
-                <li><a href="https://www.twitter.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Twitter"><span class="fa fa-twitter"></span></a></li>
-                <li><a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80" data-toggle="tooltip" data-placement="bottom" title="Linked In"><span class="fa fa-linkedin"></span></a></li>
-                <li><a href="mailto:robrothe@gmail.com" itemprop="email" data-toggle="tooltip" data-placement="bottom" title="robrothe@gmail.com"><span class="fa fa-envelope"></span></a></li>
-              </ul>
-            </div>
+            <!-- icons -->
+            <ul class="icons-list">
+              <li>
+                <a href="http://github.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Github">
+                  <span class="fa fa-github"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                  <span class="fa fa-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80" data-toggle="tooltip" data-placement="bottom" title="Linked In">
+                  <span class="fa fa-linkedin"></span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:robrothe@gmail.com" itemprop="email" data-toggle="tooltip" data-placement="bottom" title="robrothe@gmail.com">
+                  <span class="fa fa-envelope"></span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+      </div>
     </div>
   </div>
 
@@ -53,7 +93,8 @@
   <div class="content">
     <div class="stripe stripe-light-grey">
       <div class="container">
-        <h3 class="about-description">Enthusiastic web developer with over ten years of experience creating amazing websites and web-based applications on both the front-end and back-end.</h3>
+        <h3 class="about-description">Enthusiastic web developer with nearly twenty years of experience creating websites and web-based applications on
+          both the front and back-end.</h3>
         <button class="btn btn-lg btn-default text-center hidden-xs" data-smoothscroll-to="skills">View My Skills &amp; Work</button>
       </div>
     </div>
@@ -67,28 +108,22 @@
               <img src="{{ site.baseurl }}assets/images/php-logo.png" class="img-responsive center-block">
             </div>
             <div class="col-sm-3">
+              <img src="{{ site.baseurl }}assets/images/react-logo.png" class="img-responsive center-block">
+            </div>
+            <div class="col-sm-3">
+              <img src="{{ site.baseurl }}assets/images/html5-logo.png" class="img-responsive center-block">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
               <img src="{{ site.baseurl }}assets/images/mysql-logo.png" class="img-responsive center-block">
             </div>
             <div class="col-sm-3">
               <img src="{{ site.baseurl }}assets/images/jquery-logo.png" class="img-responsive center-block">
             </div>
             <div class="col-sm-3">
-              <img src="{{ site.baseurl }}assets/images/jquery-ui-logo.png" class="img-responsive center-block">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-sm-3">
-              <img src="{{ site.baseurl }}assets/images/angular-logo.png" class="img-responsive center-block">
-            </div>
-            <div class="col-sm-3">
-              <img src="{{ site.baseurl }}assets/images/html5-logo.png" class="img-responsive center-block">
-            </div>
-            <div class="col-sm-3">
               <img src="{{ site.baseurl }}assets/images/css-logo.png" class="img-responsive center-block">
-            </div>
-            <div class="col-sm-3">
-              <img src="{{ site.baseurl }}assets/images/gulp-logo.png" class="img-responsive center-block">
             </div>
           </div>
         </div>
@@ -156,41 +191,53 @@
             <div class="col-sm-4">
               <h3>Angular Froala Editor</h3>
               <p>An Angular blog app that creates a blog that uses the Froala WYSIWYG editor for adding and editing content.</p>
-              <a href="http://robrothedev.com/projects/blog/" class="btn btn-info"><span class="fa fa-gear"></span> Demo</a>
-              <a href="https://github.com/robrothedev/froala-blog-editor" class="btn btn-default"><span class="fa fa-github"></span> View on Github</a>
+              <a href="http://robrothedev.com/projects/blog/" class="btn btn-info">
+                <span class="fa fa-gear"></span> Demo</a>
+              <a href="https://github.com/robrothedev/froala-blog-editor" class="btn btn-default">
+                <span class="fa fa-github"></span> View on Github</a>
             </div>
             <div class="col-sm-4">
               <h3>PHP/Angular Registration Form</h3>
               <p>An event registration form built with Angular on the client side and PHP, MySQL and JWT on the server side..</p>
-              <a href="http://robrothedev.com/projects/event-registration/" class="btn btn-info"><span class="fa fa-gear"></span> Demo</a>
-              <a href="https://github.com/robrothedev/ng-event-registration/" class="btn btn-default"><span class="fa fa-github"></span> View on Github</a>
+              <a href="http://robrothedev.com/projects/event-registration/" class="btn btn-info">
+                <span class="fa fa-gear"></span> Demo</a>
+              <a href="https://github.com/robrothedev/ng-event-registration/" class="btn btn-default">
+                <span class="fa fa-github"></span> View on Github</a>
             </div>
             <div class="col-sm-4">
               <h3>Saltdogs Mobile App</h3>
               <p>A personal mobile web-app project using the Ionic Framework with a schedule, pricing and seating chart information.</p>
-              <a href="http://robrothedev.com/projects/saltdogs/" class="btn btn-info"><span class="fa fa-gear"></span> Demo</a>
-              <a href="https://github.com/robrothedev/saltdogs-mobile-app" class="btn btn-default"><span class="fa fa-github"></span> View on Github</a>
+              <a href="http://robrothedev.com/projects/saltdogs/" class="btn btn-info">
+                <span class="fa fa-gear"></span> Demo</a>
+              <a href="https://github.com/robrothedev/saltdogs-mobile-app" class="btn btn-default">
+                <span class="fa fa-github"></span> View on Github</a>
             </div>
           </div>
           <hr>
           <div class="row">
             <div class="col-sm-4">
               <h3>Angular Form Builder</h3>
-              <p>App that creates forms and form elements to the form.  Uses jQuery UI sortable interaction for form elements.</p>
-              <a href="http://robrothedev.com/projects/form-builder/" class="btn btn-info"><span class="fa fa-gear"></span> Demo</a>
-              <a href="https://github.com/robrothedev/form-builder" class="btn btn-default"><span class="fa fa-github"></span> View on Github</a>
+              <p>App that creates forms and form elements to the form. Uses jQuery UI sortable interaction for form elements.</p>
+              <a href="http://robrothedev.com/projects/form-builder/" class="btn btn-info">
+                <span class="fa fa-gear"></span> Demo</a>
+              <a href="https://github.com/robrothedev/form-builder" class="btn btn-default">
+                <span class="fa fa-github"></span> View on Github</a>
             </div>
             <div class="col-sm-4">
               <h3>Simple Angular List</h3>
-              <p>What?  Another Angular list example? I know, overdone but one of my first Angular projects and its a bit different.</p>
-              <a href="http://robrothedev.com/projects/angular-list-one/" class="btn btn-info"><span class="fa fa-gear"></span> Demo</a>
-              <a href="https://github.com/robrothedev/angular-list-one" class="btn btn-default"><span class="fa fa-github"></span> View on Github</a>
+              <p>What? Another Angular list example? I know, overdone but one of my first Angular projects and its a bit different.</p>
+              <a href="http://robrothedev.com/projects/angular-list-one/" class="btn btn-info">
+                <span class="fa fa-gear"></span> Demo</a>
+              <a href="https://github.com/robrothedev/angular-list-one" class="btn btn-default">
+                <span class="fa fa-github"></span> View on Github</a>
             </div>
             <div class="col-sm-4">
               <h3>CSS Progress Bar</h3>
-              <p>A step-by-step progress bar built with HTML and CSS.  jQuery has been added for demo purposes but is not required.</p>
-              <a href="http://robrothedev.com/projects/progress-steps/" class="btn btn-info"><span class="fa fa-gear"></span> Demo</a>
-              <a href="https://github.com/robrothedev/progress-steps" class="btn btn-default"><span class="fa fa-github"></span> View on Github</a>
+              <p>A step-by-step progress bar built with HTML and CSS. jQuery has been added for demo purposes but is not required.</p>
+              <a href="http://robrothedev.com/projects/progress-steps/" class="btn btn-info">
+                <span class="fa fa-gear"></span> Demo</a>
+              <a href="https://github.com/robrothedev/progress-steps" class="btn btn-default">
+                <span class="fa fa-github"></span> View on Github</a>
             </div>
           </div>
         </div>
@@ -198,18 +245,23 @@
         <div class="row">
           <div class="col-sm-6">
             <h3>MacPractice.com</h3>
-            <a href="http://www.macpractice.com"><img src="{{ site.baseurl }}assets/images/screen-macpractice.jpg" class="screen-thumb img-responsive center-block"></a>
+            <a href="http://www.macpractice.com">
+              <img src="{{ site.baseurl }}assets/images/screen-macpractice.jpg" class="screen-thumb img-responsive center-block">
+            </a>
             <a href="http://www.macpractice.com" class="btn btn-info">View Site</a>
           </div>
           <div class="col-sm-6">
             <h3>MacPractice User Conference</h3>
-            <a href="http://userconference.macpractice.com"><img src="{{ site.baseurl }}assets/images/screen-userconference.jpg" class="screen-thumb img-responsive center-block"></a>
+            <a href="http://userconference.macpractice.com">
+              <img src="{{ site.baseurl }}assets/images/screen-userconference.jpg" class="screen-thumb img-responsive center-block">
+            </a>
             <a href="http://userconference.macpractice.com" class="btn btn-info">View Site</a>
           </div>
         </div>
         <hr>
         <h3>References, resume and other sample work available upon request.</h3>
-        <a href="mailto:robrothe@gmail.com" class="btn btn-lg btn-warning text-center"><span class="fa fa-envelope"></span> Get in touch!</a>
+        <a href="mailto:robrothe@gmail.com" class="btn btn-lg btn-warning text-center">
+          <span class="fa fa-envelope"></span> Get in touch!</a>
       </div>
     </div>
   </div>
@@ -217,5 +269,6 @@
   <!-- footer -->
   {% include footer.html %}
 
-  </body>
+</body>
+
 </html>
