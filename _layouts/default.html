@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+
+  <!-- sticky navbar -->
+  <div class="navbar-sticky" id="navbar-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="{{ site.baseurl }}assets/images/rob.jpg" itemprop="image" alt="Rob Rothe" class="img img-circle img-rob">
+        </div>
+        <div class="col-sm-9">
+          <h1>Rob Rothe // React, Node, UI, PHP Web Developer</h1>
+          <ul class="icons-list">
+            <li>
+              <a href="http://github.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Github">
+                <span class="fa fa-github"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/robrothedev" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/pub/rob-rothe/64/407/b80" data-toggle="tooltip" data-placement="bottom" title="Linked In">
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:robrothe@gmail.com" itemprop="email" data-toggle="tooltip" data-placement="bottom" title="robrothe@gmail.com">
+                <span class="fa fa-envelope"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  {% include footer.html %}
+
+</body>
+
+</html>
